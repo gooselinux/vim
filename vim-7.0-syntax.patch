@@ -1,0 +1,11 @@
+--- vim70aa/runtime/filetype.vim.orig	2006-03-13 23:15:53.000000000 +0100
++++ vim70aa/runtime/filetype.vim	2006-03-14 15:56:13.000000000 +0100
+@@ -103,7 +103,7 @@
+ 
+ " Apache config file
+ au BufNewFile,BufRead .htaccess			 setf apache
+-au BufNewFile,BufRead httpd.conf*,srm.conf*,access.conf*,apache.conf*,apache2.conf*,/etc/apache2/*.conf* call s:StarSetf('apache')
++au BufNewFile,BufRead httpd.conf*,srm.conf*,access.conf*,apache.conf*,apache2.conf*,/etc/apache2/*.conf*,auth_mysql.conf*,auth_pgsql.conf*,ssl.conf*,perl.conf*,php.conf*,python.conf*,squirrelmail.conf* call s:StarSetf('apache')
+ 
+ " XA65 MOS6510 cross assembler
+ au BufNewFile,BufRead *.a65			setf a65
