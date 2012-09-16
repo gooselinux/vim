@@ -24,7 +24,7 @@ Summary: The VIM editor
 URL:     http://www.vim.org/
 Name: vim
 Version: %{baseversion}.%{beta}%{patchlevel}
-Release: 1.5%{?dist}
+Release: 1.4%{?dist}
 License: Vim and GPLv2+ and BSD and LGPLv2+ and Open Publication
 Group: Applications/Editors
 Source0: ftp://ftp.vim.org/pub/vim/unix/vim-%{baseversion}%{?beta}%{?CVSDATE}.tar.bz2
@@ -1486,9 +1486,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/icons/hicolor/*/apps/*
 
 %changelog
-* Fri Jul 08 2011 Mike Adams <shalkie@gooseproject.org> 7.2.411-1.5
-- Rebuild for GoOSe Linux 6
-
 * Wed May 19 2010 Karsten Hopp <karsten@redhat.com> 7.2.411-1.4
 - fix vim.sh scripts as id -u might return an empty string (#578795)
 
